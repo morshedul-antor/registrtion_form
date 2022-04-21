@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin-top: 20px;
+    padding: 1em;
+    font-size: 15px;
+    color: #b9b9b9;
+}
+
+.formWrapper {
+    max-width: 90em;
+    padding: 1em 2em 2em 2em;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+.formWrapper .column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4em;
+}
+
+.formWrapper h2 {
+    color: #28b0c2;
+    text-align: center;
+}
+
+.formWrapper input,
+.formWrapper.input[type="date"],
+.formWrapper select {
+    width: 100%;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin: 2px;
+    color: gray;
+}
+.formWrapper input:focus {
+    outline: 0;
+    border-color: #70c2d6;
+}
+
+.formWrapper input:focus + .inputIcon i {
+    color: #26bad4;
+}
+
+.formWrapper input:focus + .inputIcon:after {
+    border-right-color: #26bad4;
+}
+
+.formWrapper input:checked {
+    opacity: 0.8;
+}
+
+.formWrapper select {
+    height: 3.4em;
+    line-height: 2;
+}
+
+.formWrapper select:focus,
+.formWrapper select:active {
+    outline: 0;
+}
+
+.formWrapper select option {
+    color: gray;
+}
+
+.inputBox {
+    margin-bottom: 1em;
+}
+/*
+.inputBoxIcon {
+    position: relative;
+}
+
+.inputBoxIcon input {
+    padding-left: 4.4em;
+}
+
+.inputBoxIcon .inputIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.4em;
+    height: 3em;
+    line-height: 3.4em;
+    text-align: center;
+}
+
+.inputBoxIcon .inputIcon:after {
+    position: absolute;
+    top: 0.6em;
+    bottom: 0.6em;
+    left: 3.2em;
+    display: block;
+    border-right: 1px solid #e5e5e5;
+    content: "";
+} */

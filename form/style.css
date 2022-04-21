@@ -1,0 +1,97 @@
+.container {
+    /* height: 90%; */
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 20px;
+    width: 95%;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+}
+
+.container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+table {
+    /* table-layout: fixed; */
+    width: 100%;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+th,
+td {
+    border-width: 1px;
+    padding: 0.5em;
+    position: relative;
+    text-align: left;
+}
+th,
+td {
+    border-radius: 0.25em;
+    border: none;
+}
+th {
+    background: rgb(83, 206, 206);
+    border-color: #bbb;
+    color: #fff;
+}
+td {
+    border-color: #ddd;
+}
+
+/* .container */
+
+table.info,
+table.form {
+    margin: 0 0 3em;
+}
+
+/* table info */
+
+table.info th {
+    width: 40%;
+}
+table.info td {
+    width: 60%;
+}
+
+/* table items */
+
+table.form {
+    clear: both;
+    width: 100%;
+}
+table.form th {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* table balance */
+
+table.balance th,
+table.balance td {
+    width: 50%;
+}
+table.balance td {
+    text-align: right;
+}
+
+/* table info & balance */
+
+table.info,
+table.balance {
+    float: left;
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
